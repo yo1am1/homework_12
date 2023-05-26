@@ -19,5 +19,7 @@ def publications(request, id=None):
     content = pub.content
     time = pub.updated_at
     return render(
-        request, "publications.html", {"name": name, "content": content, "time": f"({time})"}
+        request,
+        "publications.html",
+        {"name": name, "content": content, "time": f"({time})"},
     )
