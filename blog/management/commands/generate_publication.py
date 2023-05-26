@@ -21,10 +21,8 @@ class Command(BaseCommand):
         if options["count"]:
             count = options["count"]
             for i in range(count):
-                Teacher.objects.create(
-                    first_name=fake.first_name(),
-                    last_name=fake.last_name(),
-                    age=fake.random_int(min=24, max=80),
-                    email=fake.email(),
+                Publication.objects.create(
+                    title=fake.sentence(),
+                    content=fake.text(),
                 )
             self.stdout.write(self.style.SUCCESS(f"Successfully generated!"))

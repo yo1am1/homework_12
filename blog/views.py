@@ -4,15 +4,12 @@ from blog.models import Publication
 
 
 def index(request):
-    Publication.objects.create(title="First blog", content="First blog content right here!")
-    pub = Publication.objects.get(id=id)
-    return render(request, 'index.html', {})
-
-
-def publications(request):
-
-    return render(request, 'publications.html', {})
+    return render(request, "index.html", {})
 
 
 def publication(request, id):
-    pass
+    pub = Publication.objects.get(id=id)
+    name = pub.title
+    content = pub.content
+    time = pub.updated_at
+    return render(request, "publications.html", {"name": name, "content": content, "time": time})
