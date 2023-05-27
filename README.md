@@ -18,15 +18,15 @@
 
 * `docker run -p 6379:6379 redis`
 
-5. Generate the publications with custom command:
-
-* `py manage.py generate_publication`
-
-6. Run the application (and create the db if it doesn't exist)
+5. Run the application (and create the db if it doesn't exist)
 
 * `py manage.py makemigrations`
 * `py manage.py migrate`
 * `py manage.py runserver`
+
+5. Generate the publications with custom command:
+
+* `py manage.py generate_publication`
 
 7. Go to the site
 
