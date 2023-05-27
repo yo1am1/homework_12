@@ -12,12 +12,13 @@ def index(request):
 def publications(request, id=None):
     try:
         pub = Publication.objects.get(id=id)
-    except:
+    except (Exception,):
         return render(request, "publications.html", {"error": "No such publication"})
 
     name = pub.title
     content = pub.content
     time = pub.updated_at
+
     return render(
         request,
         "publications.html",
