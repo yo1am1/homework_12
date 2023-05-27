@@ -32,4 +32,4 @@
 
 * [Home page](https://localhost:8000/)
 
-> Inout "http://localhost:8000/publication/{YOUR_ID}" in your browser to see the publication with the id = {YOUR_ID}
+> Input "http://localhost:8000/publication/{YOUR_ID}" in your browser to see the publication with the id = {YOUR_ID}
