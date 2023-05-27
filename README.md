@@ -26,7 +26,8 @@
 
 5. Generate the publications with custom command:
 
-* `py manage.py generate_publication`
+* `py manage.py generate_publication --count {int: AMOUNT}`
+> There is a parametr --count {int: AMOUNT}, where {AMOUNT} is a number of publications you will generate (dafault = 1)
 
 7. Go to the site
 
