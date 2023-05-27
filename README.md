@@ -1,5 +1,7 @@
 # homework_12
 
+## Installation
+
 1. Clone the repository
 
 * `git clone https://github.com/yo1am1/homework_12.git`
